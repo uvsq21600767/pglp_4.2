@@ -17,6 +17,7 @@ public class Interpreteur {
     }
 
     public void undo() {
-        
+        operand = new Stack<>();
+        operand = (Stack<Double>) hystory.clone();
     }
 }
