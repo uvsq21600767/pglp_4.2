@@ -16,4 +16,8 @@ public class SaveOperand implements Command {
         this.moteur.history = (Stack<Double>) this.moteur.operand.clone();
         this.moteur.operand.push(operand);
     }
+
+    public void setOperand(double operand) {
+        this.operand = operand;
+    }
 }

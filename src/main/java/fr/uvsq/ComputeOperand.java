@@ -16,4 +16,8 @@ public class ComputeOperand implements Command {
         this.moteur.history = (Stack<Double>) this.moteur.operand.clone();
         this.moteur.operand.push(operation.eval(this.moteur.operand.pop(), this.moteur.operand.pop()));
     }
+
+    public void setOperation(Operation operation) {
+        this.operation = operation;
+    }
 }
