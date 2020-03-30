@@ -2,5 +2,5 @@ package fr.uvsq;
 
 public interface Command {
 
-    public void apply();
+    public void apply() throws DivideZeroException;
 }

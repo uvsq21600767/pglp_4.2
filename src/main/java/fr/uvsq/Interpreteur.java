@@ -5,11 +5,11 @@ import java.util.Stack;
 public class Interpreteur {
 
     public Stack<Double> operand;
-    public Stack<Double> hystory;
+    public Stack<Double> history;
 
     Interpreteur() {
         this.operand = new Stack<>();
-        this.hystory = new Stack<>();
+        this.history = new Stack<>();
     }
 
     public void quit() {
@@ -18,6 +18,6 @@ public class Interpreteur {
 
     public void undo() {
         operand = new Stack<>();
-        operand = (Stack<Double>) hystory.clone();
+        operand = (Stack<Double>) history.clone();
     }
 }
